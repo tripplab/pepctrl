@@ -7,6 +7,7 @@ It supports three modes:
 - **`scramble`**: permutations of the POI (same residues, reordered).
 - **`random`**: random AA20 peptides of the same length.
 
+Author: trippm@tripplab.com [Feb 2026]
 ---
 
 ## Dependencies
