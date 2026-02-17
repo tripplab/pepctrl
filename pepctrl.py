@@ -15,6 +15,8 @@ POI row conventions:
 - For scramble/random output: seq_id="POI", type="poi", matches_to_poi=length, identity_to_poi=1.0
 
 Default output: CSV (TSV optional). Manifest/logs go to stderr.
+
+Author: trippm@tripplab.com [Feb 2026]
 """
 
 from __future__ import annotations
