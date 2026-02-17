@@ -40,7 +40,7 @@ So there are **no third-party Python package dependencies** for normal use.
 Clone the repo and run the script with Python:
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/tripplab/pepctrl.git
 cd pepctrl
 python3 pepctrl.py --help
 ```
