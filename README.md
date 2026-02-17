@@ -9,6 +9,83 @@ It supports three modes:
 
 ---
 
+## Dependencies
+
+`pepctrl.py` uses only Python standard library modules:
+
+- `argparse`
+- `csv`
+- `json`
+- `math`
+- `random`
+- `re`
+- `sys`
+- `time`
+- `dataclasses`
+- `typing`
+
+So there are **no third-party Python package dependencies** for normal use.
+
+### Required runtime
+
+- Python 3.8+ recommended
+
+---
+
+## Installation
+
+### Option 1: run directly (recommended)
+
+Clone the repo and run the script with Python:
+
+```bash
+git clone <your-repo-url>
+cd pepctrl
+python3 pepctrl.py --help
+```
+
+### Option 2: make it executable
+
+```bash
+chmod +x pepctrl.py
+./pepctrl.py --help
+```
+
+---
+
+## Run in a CLI terminal
+
+From the project directory:
+
+```bash
+# Show all options
+python3 pepctrl.py --help
+
+# Generate 10 decoys and print CSV to terminal
+python3 pepctrl.py --poi ACDEFGHIKLMNPQRSTVWY --type decoy --n 10
+
+# Write output file instead of terminal
+python3 pepctrl.py --poi ACDEFGHIKLMNPQRSTVWY --type random --n 25 --out random.csv
+```
+
+---
+
+## Testing
+
+There is no separate test suite in this repository right now. A practical CLI smoke test is:
+
+```bash
+# 1) Verify CLI parsing/help
+python3 pepctrl.py --help
+
+# 2) Verify generation/output shape
+python3 pepctrl.py --poi ACDEFGHIKLMNPQRSTVWY --type scramble --n 3 --seed 1 --format csv | head
+```
+
+If those commands succeed and output looks correct, your local setup is working.
+
+---
+
 ## Quick start
 
 ```bash
